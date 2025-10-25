@@ -1,0 +1,10 @@
+build_save_model_task failed with:
+=================================================
+Traceback (most recent call last):
+  File "/opt/airflow/dags/airflow_lab1_with_split.py", line 106, in build_save_from_pickle
+    sse_or_metrics = build_save_model(serialized_preprocessed, model_path)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/src/lab.py", line 47, in build_save_model
+    df = pickle.loads(data_bytes)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+_pickle.UnpicklingError: invalid load key, '\xa5'.
