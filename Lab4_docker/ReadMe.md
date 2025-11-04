@@ -2,9 +2,9 @@ Here’s a clean and professional **README.md** tailored for your project setup 
 
 ---
 
-# 🧠 Breast Cancer Classification – Random Forest Model
+# Breast Cancer Classification – Random Forest Model
 
-## 📄 Project Overview
+## Project Overview
 
 This project trains a **Random Forest Classifier** to predict whether a tumor is **malignant (M)** or **benign (B)** using the Breast Cancer dataset.
 The workflow covers:
@@ -17,7 +17,7 @@ The workflow covers:
 
 ---
 
-## 📁 Folder Structure
+## Folder Structure
 
 ```
 Lab1/
@@ -32,9 +32,9 @@ Lab1/
 
 ---
 
-## ⚙️ Setup Instructions
+## Setup Instructions
 
-### **1️⃣ Install Dependencies Locally**
+### **Install Dependencies Locally**
 
 If running without Docker:
 
@@ -46,9 +46,9 @@ python main.py
 
 ---
 
-### **2️⃣ Build and Run with Docker**
+### ** Build and Run with Docker**
 
-#### 🏗️ Build the Image
+#### Build the Image
 
 From the `Lab1` directory:
 
@@ -56,13 +56,13 @@ From the `Lab1` directory:
 docker build -t breast-cancer-train .
 ```
 
-#### ▶️ Run the Container
+#### Run the Container
 
 ```bash
 docker run --rm breast-cancer-train
 ```
 
-#### 💾 (Optional) Save Model Outside the Container
+#### (Optional) Save Model Outside the Container
 
 To persist the trained `.pkl` model on your host:
 
@@ -78,7 +78,7 @@ Lab1/model/breast_cancer_model.pkl
 
 ---
 
-## 🧩 Requirements
+## Requirements
 
 The required Python libraries are listed in `requirements.txt`:
 
@@ -96,7 +96,7 @@ pip install -r requirements.txt
 
 ---
 
-## 🚀 Script Workflow (`main.py`)
+##  Script Workflow (`main.py`)
 
 1. **Load Dataset:** Reads `breast_cancer_data.csv`.
 2. **Clean Data:** Removes unnecessary columns (`id`, unnamed), encodes `diagnosis` (M → 1, B → 0).
@@ -108,7 +108,7 @@ pip install -r requirements.txt
 
 ---
 
-## 📊 Example Output
+## Example Output
 
 ```
 Data sample:
@@ -119,12 +119,3 @@ Data sample:
 
 ---
 
-## 🧠 Author
-
-**Sarthak Vikas Sonawane**
-MS in Data Analytics Engineering – Northeastern University
-Focus: Data Science, MLOps, and Generative AI Systems
-
----
-
-Would you like me to include a short “🧪 Testing the Model” section that shows how to load the saved `.pkl` file and make predictions interactively?
