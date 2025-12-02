@@ -26,9 +26,9 @@ GROUP BY Country
 HAVING SUM(Revenue_USD) IS NOT NULL
 ORDER BY total_revenue_usd DESC
 LIMIT 5;
-Query 2 — Highest-Revenue League per Sport
-sql
-Copy code
+
+### Query 2 — Highest-Revenue League per Sport
+
 WITH ranked AS (
   SELECT
     `League ID` AS league_id,
