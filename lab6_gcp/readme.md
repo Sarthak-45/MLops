@@ -27,9 +27,10 @@ HAVING SUM(Revenue_USD) IS NOT NULL
 ORDER BY total_revenue_usd DESC
 LIMIT 5;
 ```
-```sql
+
 
 #### Query 2 — Highest-Revenue League per Sport
+```sql
 WITH ranked AS (
   SELECT
     `League ID` AS league_id,
@@ -52,7 +53,7 @@ SELECT
 FROM ranked
 WHERE rev_rank_in_sport = 1
 ORDER BY Revenue_USD DESC;
-
+```
 
 📊 Visualizations
 
