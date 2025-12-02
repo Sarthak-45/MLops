@@ -58,6 +58,6 @@ ORDER BY Revenue_USD DESC;
 📊 Visualizations
 
 Visuals created in BigQuery:
-📈 Pie Chart — Country share of global viewership
-📉 Bar Chart — Number of leagues per country
-📊 Horizontal Bar — Total viewership across countries
+* 📈 Pie Chart — Country share of global viewership
+* 📉 Bar Chart — Number of leagues per country
+* 📊 Horizontal Bar — Total viewership across countries
