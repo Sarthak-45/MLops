@@ -27,8 +27,8 @@ HAVING SUM(Revenue_USD) IS NOT NULL
 ORDER BY total_revenue_usd DESC
 LIMIT 5;
 
-### Query 2 — Highest-Revenue League per Sport
 
+Query 2 — Highest-Revenue League per Sport
 WITH ranked AS (
   SELECT
     `League ID` AS league_id,
@@ -51,13 +51,11 @@ SELECT
 FROM ranked
 WHERE rev_rank_in_sport = 1
 ORDER BY Revenue_USD DESC;
+
+
 📊 Visualizations
+
 Visuals created in BigQuery:
-
 📈 Pie Chart — Country share of global viewership
-
 📉 Bar Chart — Number of leagues per country
-
 📊 Horizontal Bar — Total viewership across countries
-
-
